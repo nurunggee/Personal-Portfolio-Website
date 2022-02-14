@@ -1,0 +1,233 @@
+@font-face {
+    font-family: abster;
+    src: url(font/abster-webfont.woff) format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0a2a43;
+    min-height: 1500px;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 10000;
+}
+
+section:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:#0a2a43;
+    z-index: 10000;
+    mix-blend-mode: color;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+#forest {
+    z-index: 2;
+}
+
+.container .header {
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container .header h1 a {
+    text-decoration: none;
+    color: white;
+    font-family: abster;
+}
+
+
+
+.container .about {
+    font-size: 20px;
+    padding-left: 20vh 20vw;
+    padding-right: 20vh 20vw;
+    padding-bottom: 20vh 20vw;
+    text-align: center;
+}
+
+.container .about .icons {
+    display: flex;
+    width:1280px;
+    height: 302px;
+    /* background: #DEA144; */
+    margin: auto;
+}
+
+
+.icons > li {
+    flex: 1;
+    background: white;
+    margin-top: 49px;
+    height: 302px;
+    text-align: center;
+}
+
+.icons > li > .icon {
+    align-items: center;
+    margin-top: 36px;
+    width: 100%;
+}
+
+.icons > li:not(:last-child){
+    margin-right: 20px;
+}
+
+.explain1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.subtext1 {
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.icon {
+    width: 100px;
+}
+
+.icons .subtext1 {
+    width: 240px;
+    margin: auto;
+    letter-spacing: -0.5px;
+}
+
+
+.more {
+    width: 100px;
+    height: 30px;
+    background: blue;
+    color: white;
+    font-size: 12px;
+    line-height: 30px;
+    margin: 15px auto;
+}
+
+.container .about h1 {
+    color: white;
+    /* margin-bottom: 0px; */
+    padding-top: 50px;
+    font-size: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.container .about .contents1 {
+    font-size: 20px;
+    font-weight: lighter;
+    color: white;
+    text-align: left;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box img {
+    width: 300px;
+}
+
+.container .header h1 a:hover {
+    color: #FDF91E;
+}
+
+.container .nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.container .nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .nav ul li a:hover {
+    color: #FDF91E;
+}
+
+section .hero {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section .hero h2 {
+    font-size: 100px;
+}
+
+section p {
+    font-size: 35px;
+}
+
+section .hero button {
+    background: none;
+    border: 2px solid #356268;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    outline: none;
+    cursor: pointer;
+    transition: all .4s;
+    font-size: 15px;
+}
+
+section .hero button:hover {
+    background-color: #356268;
+}
