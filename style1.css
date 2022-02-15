@@ -169,6 +169,10 @@ ul {
     list-style: none;
 }
 
+.container .header h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 
 .container .about .contents1 {
     font-size: 20px;
@@ -280,6 +284,7 @@ h1, h4 {
     margin-bottom: 10px;
 }
 
+
 h4, .h4 {
     font-size: 25px;
     color: white;
@@ -289,6 +294,7 @@ p {
     margin: 0 0 10px;
     color: white;
 }
+
 
 .hidden-phone {
     font-weight: lighter;
